@@ -1,0 +1,37 @@
+.user {
+  display: flex;
+  border-bottom: 1px solid #80808014;
+  flex-wrap: wrap;
+  flex-direction: row;
+  min-height: 52px;
+  .avatar {
+    width: 40px;
+    margin-top: 8px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 18px;
+    font-family: roboto, arial;
+    color: white;
+    text-align: center;
+    background: orange;
+    display: flex;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+
+  .user-info-body {
+    flex: 1;
+
+    margin-left: 46px;
+    // margin-top: 7px;
+    place-self: center;
+    .username {
+      // margin-left: 46px;
+      text-transform: capitalize;
+    }
+    .caption {
+      color: gray;
+      font-family: monospace;
+    }
+  }
+}
