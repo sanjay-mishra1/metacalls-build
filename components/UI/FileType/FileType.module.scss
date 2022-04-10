@@ -1,0 +1,37 @@
+.file_block {
+  display: flex;
+  border-bottom: 1px solid #80808014;
+  padding: 10px;
+  cursor: pointer;
+  &:hover {
+    background-color: rgb(224, 224, 224);
+  }
+  .file_info_body {
+    flex: 1;
+  }
+  .file_image {
+    object-fit: cover;
+    margin-right: 10px;
+    height: 50px;
+    width: 50px;
+  }
+  .file {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-family: roboto, arial;
+    .fileIcon {
+      position: absolute;
+      margin-top: -25px;
+      font-size: 10px;
+      color: white;
+      margin-left: 8px;
+      text-transform: uppercase;
+    }
+  }
+  .file_info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

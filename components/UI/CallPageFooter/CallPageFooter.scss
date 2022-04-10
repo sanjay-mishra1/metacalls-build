@@ -1,0 +1,141 @@
+.icon-fixed-top {
+  position: absolute;
+  top: 18px;
+  color: black;
+  font-size: 13px;
+  margin-left: 34px;
+}
+.MuiMenu-paper {
+  max-height: calc(100% - 96px);
+  width: 10em;
+  -webkit-overflow-scrolling: touch;
+}
+.emoji {
+  cursor: pointer;
+}
+.emoji .img-main {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+}
+.emoji .img-top {
+  display: none;
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  // z-index: 99;
+}
+.emoji:hover .img-main {
+  display: none;
+}
+.emoji:hover .img-top {
+  position: absolute;
+  width: 30px;
+  display: block;
+  height: 30px;
+  z-index: 99;
+}
+.footer-item {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
+  background: #ffffff;
+  z-index: 1;
+  .left-item {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 350px;
+    .icon-block {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      padding: 0 20px;
+      .icon {
+        margin-left: 10px;
+        font-size: 20px;
+      }
+      &:hover {
+        cursor: pointer;
+        background: #eee;
+      }
+    }
+  }
+  .center-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    .icon-block {
+      background: #fff;
+      border: 1px solid rgb(223, 223, 223);
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 10px;
+      .icon {
+        color: #555;
+        font-size: 20px;
+        &.red {
+          color: #d93025;
+        }
+      }
+      &:hover {
+        cursor: pointer;
+        box-shadow: 0 0 10px #ddd;
+      }
+      &.red-bg {
+        background: #d93025;
+        .icon {
+          color: #fff;
+        }
+      }
+    }
+  }
+  .right-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    width: 350px;
+    .icon-block {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      height: 100%;
+      width: 146px;
+      color: #555;
+      .icon {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+      .title {
+        margin: 0;
+        font-size: 14px;
+        font-weight: 500;
+      }
+      &:hover {
+        cursor: pointer;
+        background: #eee;
+      }
+    }
+  }
+}
+.MuiMenu-paper {
+  // max-height: calc(100% - 96px);
+  -webkit-overflow-scrolling: touch;
+  margin-top: -74px;
+  min-width: 15em;
+  margin-left: -51px;
+}
