@@ -22,7 +22,13 @@ export async function getServerSideProps(context) {
       Location: "/signin",
     });
     res.end();
-    return;
+    //return;
+    return {
+      props: {
+        ok: false,
+        reason: "User not logged in. Redirecting to the login page",
+      },
+    };
   }
   return {
     props: {
